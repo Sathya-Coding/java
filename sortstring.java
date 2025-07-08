@@ -1,15 +1,15 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class sortstring {
     public static void main(String[] args) {
-        String fruits[] = {"apple", "orange", "banana", "grapes"};
-        System.out.println("Original fruits");
-        for (String fruit : fruits) {
-            Arrays.sort(fruits);
-            System.out.println("Strings sort in alphabetically: "+fruit);
-        }
-        for(String fruit:fruits){
-            System.out.println(fruit);
-        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        String input = scanner.nextLine();
+        char[] chars = input.toCharArray();
+        Arrays.sort(chars);
+        String sorted = new String(chars);
+        System.out.println("Sorted string: " + sorted);
     }
 }
+
