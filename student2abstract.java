@@ -9,28 +9,34 @@ class Student extends schoolmember{
         this.rollno=rollno;
     }
     public String getName() {
+
         return name;
     }
     public int getRollno(){
+
         return rollno;
     }
     public void setName(String name){
+
         this.name=name;
     }
     public void setRollno(int rollno){
+
         this.rollno=rollno;
     }
     public void details(){
-        System.out.println("Student Details"+name+rollno);
+
+        System.out.println("Student Details:"+name+rollno);
+        System.out.println("Name:"+getName());
+        System.out.println("Roll No:"+getRollno());
     }
 }
 public class student2abstract {
     public static  void main(String[]args){
-        Student s=new Student("Riya",0);
+        Student s=new Student(" Riya ",101);
         s.details();
-        System.out.println("Name:"+s.getName());
+
         s.setRollno(101);
-        System.out.println("Roll No:"+s.getRollno());
     }
 }
 
